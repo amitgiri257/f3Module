@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Office Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="home-page" id="home-page">
+        <div class="left-side">
+            <h1 class="heading">Post Office Application.</h1>
+            <p id="para">This Application Allows you to extract information about the nearest Post Offices, based on your location.</p>
+            <img id="img-messenger" src="./sources/undraw_messenger_re_8bky 1.png" alt="img-messenger">
+        </div>
+        <div class="right-side">
+        <p class="your-Ip">Your Current IP Address is <span id="gfg"></span></p>
+        <button id="get-started">Get Started</button>
+        </div>
+    </div>
+
+    <div class="detail-Page" id="detail-Page"
+        >
+        <div class="info" id="info">
+         <div id="ip">IP Address : <span id="Adress"></span></div> 
+        <div id="more-info"> 
+             <div class="lat" >Lat : <span id="lat"></span></div>
+            <div class="city">City : <span id="city"></span></div>
+            <iv class="organisation">Organisation : <span id="org"></span></iv>
+            <div class="long">Long : <span id="long"></span></div>
+            <div class="Region">Region : <span id="region"></span></div>
+            <div class="Hostname">Hostname : <span id="host"></span></div>
+        </div> 
+    </div>
+     <div class="location">
+        <div class="map" id="map">
+        <!-- <div class="your-location">Your Current Location</div>  -->
+            <!-- <iframe src="https://maps.google.com/maps?q=35.856737, 10.606619&z=15&output=embed" 
+            width="1390px" height="677px" 
+            frameborder="0" style="border:0"></iframe> -->
+     </div>
+
+     <div class="info2">
+        <h2 id="more">More Information About You</h2>
+        <div id="more-info2">
+            <div class="time-zone">Time Zone : <span id="time"></span></div>
+            <div class="date">Date And Time : <span id="date"></span></div>
+            <div class="pin">Pincode : <span id="pin"></span></div>
+            <div class="message">Message: Number of pincode(s) found : <span id="totalpin"></span></div>
+           
+        </div>
+    </div>
+
+    <div class="info3">
+        <h2 id="more">Post Offices Near You</h2>
+        <div class="input-container">
+       <input id="input" type="search" placeholder=" Search By Name "> 
+       <img id="imgg-search" src="./sources/Vector (3).svg" alt="search">
+    </div>
+        <div class="cards" id="cards">
+            <!-- <div class="card" id="card">
+                <p>Name  <span id="name"></span></p>
+                <p>Branch Type  <span id="branch"></span></p>
+                <p>Delivery Status  <span id="status"></span></p>
+                <p>District  <span id="district"></span></p>
+                <p>Division  <span id="div"></span></p>
+            </div>
+             -->
+           
+        </div>
+    </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+         
+        <!-- <script>
+         
+        // Add "https://ipinfo.io" statement
+        // this will communicate with the ipify servers
+        // in order to retrieve the IP address
+        $.get("https://ipinfo.io", function(response) {
+                alert(response.ip);
+            }, "json")
+             
+            // "json" shows that data will be fetched in json format
+        </script> -->
+
+</body>
+</html>
